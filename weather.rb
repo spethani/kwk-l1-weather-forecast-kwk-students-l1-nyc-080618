@@ -48,7 +48,9 @@ end
 # Hint - how can we find the algorithm to convert Farenheit to Celsius?
 def convert_temp(weather) 
   temp = weather[:temperature_farenheit]
+  puts temp
   temp = (temp-32)*(5/9)
+  puts temp
   temp = (temp*100).round/100
   return temp
 end
