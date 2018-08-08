@@ -53,5 +53,4 @@ def convert_temp(weather)
   return temp
 end
 
-puts weather_report(nyc_weather)
-city_weather_info(nyc_weather)
+puts convert_temp(nyc_weather)
