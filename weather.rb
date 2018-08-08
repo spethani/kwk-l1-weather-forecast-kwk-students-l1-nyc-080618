@@ -49,7 +49,7 @@ end
 def convert_temp(weather) 
   temp = weather[:temperature_farenheit]
   puts temp
-  celsius = (temp-32)*(5/9)
+  celsius = (temp-32.0)*(5.0/9.0)
   puts celsius
   temp = (temp*100).round/100
   return temp
