@@ -51,8 +51,8 @@ def convert_temp(weather)
   puts temp
   celsius = (temp-32.0)*(5.0/9.0)
   puts celsius
-  temp = (temp*100).round/100
-  return temp
+  celsius = (temp*100).round/100.0
+  return celsius
 end
 
 puts convert_temp(nyc_weather)
