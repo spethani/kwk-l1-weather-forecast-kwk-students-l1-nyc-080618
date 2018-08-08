@@ -31,7 +31,7 @@ end
 
 # 3. Using the methods above and string interpolation, update the method below so that it returns a string that describes the current weather - for example: "The weather in New York is Partly Cloudy. The temperature is 66.1 degrees Farenheit." HINT: the method should RETURN the string, not print it to the terminal. 
 def weather_report(weather)
-  puts "The weather in #{weather[:city]} is #{weather[:description]}. The temperature is #{weather[:temperature_farenheit]} degrees Fahrenheit."
+  return "The weather in #{weather[:city]} is #{weather[:description]}. The temperature is #{weather[:temperature_farenheit]} degrees Fahrenheit."
 end
 
 #4. Write a method that takes in the weather hash as an argument. 
@@ -53,5 +53,5 @@ def convert_temp(weather)
   return temp
 end
 
-weather_report(nyc_weather)
+puts weather_report(nyc_weather)
 city_weather_info(nyc_weather)
