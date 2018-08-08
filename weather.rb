@@ -5,7 +5,20 @@
 # 	:description => "Partly Cloudy",
 # 	:temperature_farenheit => 66.3
 # }
+nyc_weather = {
+  :city => "New York",
+  :description => "Partly Cloudy",
+  :temperature_farenheit => 75,
+  :temperature_celcius => 19.1
+}
 
+sf_weather = {
+  :city => "San Francisco",
+  :description => "Sunny",
+  :temperature_farenheit => 58.3,
+  :temperature_celcius => 14.6
+}
+    
 # 1. Complete the method below called location, that accepts a hash called weather as an argument so that it returns the value of city from the weather hash. 
 def location(weather)
 	return weather[:city]
@@ -40,4 +53,5 @@ def convert_temp(weather)
   return temp
 end
 
-
+weather_report(nyc_weather)
+city_weather_info(nyc_weather)
